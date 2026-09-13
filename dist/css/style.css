@@ -22,6 +22,11 @@ body {
 }
 
 /* Navbar */
+
+.navbar {
+  padding: 20px 0 20px 0;
+}
+
 .navbar-box {
   display: flex;
   justify-content: space-between;
@@ -30,6 +35,49 @@ body {
 
 .navbar-box .menu {
   display: flex;
-  gap: 50px;
+  gap: 40px;
+}
+
+.navbar-box .menu li {
+  list-style-type: none;
+}
+
+.navbar-box .menu li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+.navbar-box .menu li a:hover {
+  border-bottom: 3px solid grey;
+}
+
+.navbar-box .ri-menu-3-line {
+  display: none;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .navbar-box .ri-menu-3-line {
+    display: block;
+  }
+
+  .navbar-box .menu {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: column;
+    text-align: center;
+    background-color: grey;
+    width: 100%;
+    padding: 40px 0 40px 0;
+  }
+
+  .navbar-box .menu li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: underline;
+  }
 }
 /* Navbar */
