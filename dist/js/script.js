@@ -9,3 +9,5 @@ hamburger.addEventListener("click", () => {
 window.onscroll = () => {
   menu.classList.remove("menu-active");
 };
+
+const bottonfilter = document.querySelectorAll(".produk-box ul li");
