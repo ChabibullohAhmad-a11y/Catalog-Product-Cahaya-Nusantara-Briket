@@ -10,4 +10,21 @@ window.onscroll = () => {
   menu.classList.remove("menu-active");
 };
 
-const bottonfilter = document.querySelectorAll(".produk-box ul li");
+const btnfilter = document.querySelectorAll(".produk-box ul li");
+const imgItem = document.querySelectorAll(".produk-list img");
+
+btnfilter.forEach((data) => {
+  data.onclick = () => {
+    btnfilter.forEach((data) => {
+      data.className = "";
+    });
+
+    data.className = "active";
+
+    // Filter Image
+    const btnText = data.textContent;
+    imgItem.forEach((img) => {
+      img.style.display = "none";
+    });
+  };
+});

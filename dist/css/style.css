@@ -240,6 +240,6 @@ body {
 
 .produk-box .produk-list img:hover {
   background-color: rgb(201, 201, 201);
-  transform: scale(1.01);
+  transform: scale(1.05);
 }
 /* Product */
