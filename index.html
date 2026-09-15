@@ -28,7 +28,10 @@
       rel="stylesheet"
     />
 
-    <title>Katalog Produk</title>
+    <!-- AOs -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>Cahaya Nusantara Briket</title>
   </head>
   <body>
     <!-- Navbar -->
@@ -40,16 +43,16 @@
           </div>
           <ul class="menu">
             <li>
-              <a href="#">Beranda</a>
+              <a href="#Beranda">Beranda</a>
             </li>
             <li>
-              <a href="#">Layanan</a>
+              <a href="#Layanan">Layanan</a>
             </li>
             <li>
-              <a href="#">Produk</a>
+              <a href="#Produk">Produk</a>
             </li>
             <li>
-              <a href="#">Kontak</a>
+              <a href="#Kontak">Kontak</a>
             </li>
           </ul>
 
@@ -61,10 +64,10 @@
     <!-- Navbar -->
 
     <!-- Hero -->
-    <div class="hero">
+    <div class="hero" id="Beranda">
       <div class="container">
         <div class="hero-box">
-          <div class="box">
+          <div class="box" data-aos="fade-up" data-aos-duration="1000">
             <h1>
               Katalog <br />
               Briket Kelapa
@@ -75,7 +78,7 @@
             </p>
             <a href="#">Detail Produk</a>
           </div>
-          <div class="box">
+          <div class="box" data-aos="fade-up" data-aos-duration="1000">
             <img src="./assets/images/hero.jpg" alt="Catalog img" />
           </div>
         </div>
@@ -84,9 +87,9 @@
     <!-- Hero -->
 
     <!-- Layanan -->
-    <div class="layanan">
+    <div class="layanan" id="Layanan">
       <div class="container">
-        <div class="layanan-box">
+        <div class="layanan-box" data-aos="flip-up" data-aos-duration="1500">
           <div class="box">
             <i class="ri-star-fill ri-2x"></i>
             <h2>Produk Original</h2>
@@ -117,53 +120,53 @@
     <!-- Layanan -->
 
     <!-- Produk -->
-    <div class="produk">
+    <div class="produk" id="Produk">
       <div class="container">
-        <div class="produk-box">
+        <div class="produk-box" data-aos="fade-up" data-aos-duration="1000">
           <h1>Produk Kami</h1>
           <ul>
-            <li class="active">Semua Produk</li>
-            <li>BARBEQUE CHARCOAL BRIQUETTE</li>
-            <li>COCONUT SHISHA CHARCOAL BRIQUETTE</li>
-            <li>SAWDUST CHARCOAL</li>
-            <li>NATURAL WOOD CHARCOAL</li>
+            <li class="active">All Produk</li>
+            <li>Keyboard</li>
+            <li>Mouse</li>
+            <li>Monitor</li>
+            <li>Headset</li>
           </ul>
 
-          <div class="produk-list">
+          <div class="produk-list" data-aos="fade-up" data-aos-duration="1000">
             <img
               src="/assets/images/headset1.png"
               alt="Produk Img"
-              data-filter="headset1"
+              data-filter="headset"
             />
             <img
               src="/assets/images/keyboard1.png"
               alt="Produk Img"
-              data-filter="keyboard1"
+              data-filter="keyboard"
             />
             <img
               src="/assets/images/monitor1.png"
               alt="Produk Img"
-              data-filter="monitor1"
+              data-filter="monitor"
             />
             <img
               src="/assets/images/mouse1.png"
               alt="Produk Img"
-              data-filter="monitor1"
+              data-filter="monitor"
             />
             <img
               src="/assets/images/mouse2.png"
               alt="Produk Img"
-              data-filter="mouse2"
+              data-filter="mouse"
             />
             <img
               src="/assets/images/keyboard2.png"
               alt="Produk Img"
-              data-filter="keyboard2"
+              data-filter="keyboard"
             />
             <img
               src="/assets/images/keyboard3.png"
               alt="Produk Img"
-              data-filter="keyboard3"
+              data-filter="keyboard"
             />
           </div>
         </div>
@@ -171,7 +174,30 @@
     </div>
     <!-- Produk -->
 
+    <!-- Footer -->
+    <div class="footer" id="Kontak">
+      <div class="box">
+        <p>
+          &copy; Copyright 2026 by <span>Cahaya Nusantara Briket</span>. All
+          Right Reserved
+        </p>
+      </div>
+      <div class="box">
+        <i class="ri-facebook-circle-fill ri-2x"></i>
+        <i class="ri-instagram-fill ri-2x"></i>
+        <i class="ri-linkedin-fill ri-2x"></i>
+        <i class="ri-tiktok-fill ri-2x"></i>
+      </div>
+    </div>
+    <!-- Footer -->
+
     <!-- JS -->
     <script src="./dist/js/script.js"></script>
+
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

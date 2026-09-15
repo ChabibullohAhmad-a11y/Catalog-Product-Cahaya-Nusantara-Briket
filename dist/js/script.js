@@ -25,6 +25,12 @@ btnfilter.forEach((data) => {
     const btnText = data.textContent;
     imgItem.forEach((img) => {
       img.style.display = "none";
+      if (
+        img.getAttribute("data-filter") == btnText.toLowerCase() ||
+        btnText == "All Produk"
+      ) {
+        img.style.display = "block";
+      }
     });
   };
 });
